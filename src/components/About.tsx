@@ -43,3 +43,5 @@ export const About = memo(() => (
         </div>
     </section>
 ));
+
+About.displayName = "About";
