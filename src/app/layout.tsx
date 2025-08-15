@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
+import IonicScripts from "@/utils/IonicScripts";
+import AnalyticsWrapper from "@/utils/AnalyticsWrapper";
 
 const roboto = localFont({
   src: [
@@ -183,6 +185,8 @@ export default function RootLayout({
         suppressHydrationWarning={true}
       >
         {children}
+        <IonicScripts />
+        <AnalyticsWrapper />
       </body>
     </html>
   );
