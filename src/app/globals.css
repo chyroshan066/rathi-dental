@@ -219,7 +219,7 @@
     }
   }
 
-  .header-bottom > .container {
+  .header-bottom > .custom-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -530,7 +530,7 @@
     background-color: var(--oxford-blue-2);
     color: var(--light-steel-blue);
   }
-  .footer-top .container {
+  .footer-top .custom-container {
     display: grid;
     gap: 30px;
   }
@@ -655,7 +655,7 @@
   }
 
   /* FOOTER */
-  .footer-top .container { 
+  .footer-top .custom-container { 
     grid-template-columns: 1fr 1fr; 
   }
 }
@@ -683,7 +683,7 @@
   .hero { 
     overflow: hidden; 
   }
-  .hero .container {
+  .hero .custom-container {
     display: grid;
     grid-template-columns: 1fr 0.75fr;
     align-items: center;
@@ -725,7 +725,7 @@
   .cta { 
     padding-block: 0; 
   }
-  .cta .container {
+  .cta .custom-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: flex-end;
@@ -747,7 +747,7 @@
   .footer-bottom { 
     padding-block: 30px; 
   }
-  .footer-bottom .container {
+  .footer-bottom .custom-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -783,13 +783,13 @@
     color: var(--white);
     padding-block: 20px;
   }
-  .header-top :is(.container, .social-list),
+  .header-top :is(.custom-container, .social-list),
   .contact-list,
   .contact-item {
     display: flex;
     align-items: center;
   }
-  .header-top .container { 
+  .header-top .custom-container { 
     justify-content: space-between; 
   }
   .contact-list { 
@@ -863,7 +863,7 @@
   }
 
   /* ABOUT */
-  .about .container {
+  .about .custom-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -889,7 +889,7 @@
   }
 
   /* FOOTER */
-  .footer-top .container { 
+  .footer-top .custom-container { 
     grid-template-columns: 1fr 0.5fr 0.6fr 0.75fr; 
   }
 }
@@ -914,7 +914,7 @@
   .header-bottom .btn { 
     padding: 18px 30px; 
   }
-  .header-bottom > .container { 
+  .header-bottom > .custom-container { 
     gap: 40px; 
   }
   .navbar-list { 
@@ -922,7 +922,7 @@
   }
 
   /* ABOUT */
-  .about .container {
+  .about .custom-container {
     grid-template-columns: 0.85fr 1fr;
     gap: 100px;
   }
@@ -940,7 +940,7 @@
   }
 
   /* Call To Action */
-  .cta .container { 
+  .cta .custom-container { 
     align-items: center; 
   }
   .cta-banner { 
