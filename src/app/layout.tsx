@@ -179,7 +179,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${forum.variable} ${dm_sans.variable}`}
+        className={`${roboto.variable} ${poppins.variable}`}
         suppressHydrationWarning={true}
       >
         {children}
