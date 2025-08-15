@@ -1,9 +1,9 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { memo, useEffect, useState } from "react";
 import { IonIcon } from "./utility/IonIcon";
 
-export const Header = () => {
+export const Header = memo(() => {
     const [isNavActive, setIsNavActive] = useState(false);
     const [isHeaderActive, setIsHeaderActive] = useState(false);
 
@@ -197,4 +197,6 @@ export const Header = () => {
             </div>
         </header>
     </>;
-}
+});
+
+Header.displayName = "Header";

@@ -1,6 +1,7 @@
 import Image from "next/image";
+import { memo } from "react";
 
-export const Hero = () => (
+export const Hero = memo(() => (
     <section
         className="section hero"
         id="home"
@@ -49,4 +50,6 @@ export const Hero = () => (
 
         </div>
     </section>
-)
+));
+
+Hero.displayName = "Hero";
