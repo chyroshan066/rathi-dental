@@ -183,6 +183,7 @@ export default function RootLayout({
       <body
         className={`${roboto.variable} ${poppins.variable}`}
         suppressHydrationWarning={true}
+        id="top"
       >
         {children}
         <IonicScripts />
