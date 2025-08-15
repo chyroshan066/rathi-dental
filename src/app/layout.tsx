@@ -112,37 +112,37 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  // icons: {
-  //   icon: [
-  //     {
-  //       url: '/favicon_io/favicon-16x16.png',
-  //       sizes: '16x16',
-  //       type: 'image/png'
-  //     },
-  //     {
-  //       url: '/favicon_io/favicon-32x32.png',
-  //       sizes: '32x32',
-  //       type: 'image/png'
-  //     },
-  //     {
-  //       url: '/favicon_io/android-chrome-192x192.png',
-  //       sizes: '192x192',
-  //       type: 'image/png'
-  //     },
-  //     {
-  //       url: '/favicon_io/android-chrome-512x512.png',
-  //       sizes: '512x512',
-  //       type: 'image/png'
-  //     },
-  //     {
-  //       url: '/favicon_io/favicon.ico',
-  //       sizes: '32x32'
-  //     },
-  //   ],
-  //   shortcut: '/favicon_io/favicon.ico',
-  //   apple: '/favicon_io/apple-touch-icon.png',
-  // },
-  // manifest: '/favicon_io/site.webmanifest',
+  icons: {
+    icon: [
+      {
+        url: '/favicon_io/favicon-16x16.png',
+        sizes: '16x16',
+        type: 'image/png'
+      },
+      {
+        url: '/favicon_io/favicon-32x32.png',
+        sizes: '32x32',
+        type: 'image/png'
+      },
+      {
+        url: '/favicon_io/android-chrome-192x192.png',
+        sizes: '192x192',
+        type: 'image/png'
+      },
+      {
+        url: '/favicon_io/android-chrome-512x512.png',
+        sizes: '512x512',
+        type: 'image/png'
+      },
+      {
+        url: '/favicon_io/favicon.ico',
+        sizes: '32x32'
+      },
+    ],
+    shortcut: '/favicon_io/favicon.ico',
+    apple: '/favicon_io/apple-touch-icon.png',
+  },
+  manifest: '/favicon_io/site.webmanifest',
   openGraph: {
     title: "Rathi Dental - Advanced Dental Care in Itahari, Nepal",
     description: "Expert dentists in Itahari offering dental implants, braces, root canals, cosmetic dentistry, and preventive care in a modern, patient-friendly clinic.",
