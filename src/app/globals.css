@@ -169,7 +169,7 @@
   .btn:is(:hover, :focus) { 
     --deg: -90deg; 
   }
-  .w-100 { 
+  .w-fill { 
     width: 100%; 
   }
   .text-center { 
