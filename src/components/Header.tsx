@@ -2,6 +2,8 @@
 
 import { memo, useEffect, useState } from "react";
 import { IonIcon } from "./utility/IonIcon";
+import { NAVLINKS, SOCIALLINKS } from "@/constants";
+import { SocialLink } from "./utility/SocialLink";
 
 export const Header = memo(() => {
     const [isNavActive, setIsNavActive] = useState(false);
@@ -60,41 +62,13 @@ export const Header = memo(() => {
                     </ul>
                     <ul className="social-list">
 
-                        <li>
-                            <a
-                                href="#"
-                                className="social-link"
-                            >
-                                <IonIcon name="logo-facebook" />
-                            </a>
-                        </li>
-
-                        <li>
-                            <a
-                                href="#"
-                                className="social-link"
-                            >
-                                <IonIcon name="logo-instagram" />
-                            </a>
-                        </li>
-
-                        <li>
-                            <a
-                                href="#"
-                                className="social-link"
-                            >
-                                <IonIcon name="logo-twitter" />
-                            </a>
-                        </li>
-
-                        <li>
-                            <a
-                                href="#"
-                                className="social-link"
-                            >
-                                <IonIcon name="logo-youtube" />
-                            </a>
-                        </li>
+                        {SOCIALLINKS.map((link, index) => (
+                            <SocialLink
+                                key={index}
+                                href={link.href}
+                                name={link.name}
+                            />
+                        ))}
 
                     </ul>
                 </div>
@@ -115,56 +89,20 @@ export const Header = memo(() => {
                         data-navbar
                     >
                         <ul className="navbar-list">
-                            <li>
-                                <a
-                                    href="#home"
-                                    className="navbar-link"
-                                    onClick={closeNav}
-                                    data-nav-link
-                                >
-                                    Home
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="#service"
-                                    className="navbar-link"
-                                    onClick={closeNav}
-                                    data-nav-link
-                                >
-                                    Services
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="#about"
-                                    className="navbar-link"
-                                    onClick={closeNav}
-                                    data-nav-link
-                                >
-                                    About Us
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="#blog"
-                                    className="navbar-link"
-                                    onClick={closeNav}
-                                    data-nav-link
-                                >
-                                    Blog
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="#"
-                                    className="navbar-link"
-                                    onClick={closeNav}
-                                    data-nav-link
-                                >
-                                    Contact
-                                </a>
-                            </li>
+
+                            {NAVLINKS.map((link, index) => (
+                                <li key={index}>
+                                    <a
+                                        href={link.href}
+                                        className="navbar-link"
+                                        onClick={closeNav}
+                                        data-nav-link
+                                    >
+                                        {link.name}
+                                    </a>
+                                </li>
+                            ))}
+
                         </ul>
                     </nav>
 

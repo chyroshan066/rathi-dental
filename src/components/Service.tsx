@@ -4,7 +4,7 @@ import Image from "next/image";
 import { memo } from "react";
 
 const ServiceCard = memo(({
-    imgSrc, title, text
+    imgSrc, name, text
 }: Services) => (
     <li>
         <div className="service-card">
@@ -19,7 +19,7 @@ const ServiceCard = memo(({
                 />
             </div>
             <div>
-                <h3 className="h3 card-title">{title}</h3>
+                <h3 className="h3 card-title">{name}</h3>
                 <p className="card-text">{text}</p>
             </div>
         </div>
@@ -43,9 +43,9 @@ export const Service = memo(() => (
                     .filter(service => service.id != null && service.id <= 3)
                     .map((service) => (
                         <ServiceCard
-                            key={service.id ? service.id : service.title}
+                            key={service.id ? service.id : service.name}
                             imgSrc={service.imgSrc}
-                            title={service.title}
+                            name={service.name}
                             text={service.text}
                         />
                     ))
@@ -68,9 +68,9 @@ export const Service = memo(() => (
                     .filter(service => service.id != null && service.id > 3 && service.id <= 6)
                     .map((service) => (
                         <ServiceCard
-                            key={service.id ? service.id : service.title}
+                            key={service.id ? service.id : service.name}
                             imgSrc={service.imgSrc}
-                            title={service.title}
+                            name={service.name}
                             text={service.text}
                         />
                     ))

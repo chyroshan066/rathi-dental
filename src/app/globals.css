@@ -454,77 +454,6 @@
     max-width: max-content; 
   }
 
-  /* BLOG */
-  .blog .section-title { 
-    margin-block-end: 50px; 
-  }
-  .blog-list {
-    display: grid;
-    gap: 30px;
-  }
-  .blog-card {
-    border-radius: var(--radius-4);
-    box-shadow: var(--shadow-5);
-  }
-  .blog-card .card-banner {
-    position: relative;
-    border-radius: var(--radius-4);
-    overflow: hidden;
-  }
-  .blog-card .card-banner img { 
-    transition: var(--transition); 
-  }
-  .blog-card:is(:hover, :focus-within) .card-banner img { 
-    transform: scale(1.1); 
-  }
-  .blog-card .card-badge {
-    background-color: var(--royal-blue-light);
-    color: var(--white);
-    position: absolute;
-    bottom: 25px;
-    left: 25px;
-    display: flex;
-    gap: 5px;
-    padding: 10px 15px;
-    border-radius: var(--radius-6);
-  }
-  .blog-card .card-content { 
-    padding: 30px; 
-  }
-  .blog-card .card-title { 
-    transition: var(--transition); 
-  }
-  .blog-card .card-title:is(:hover, :focus) { 
-    color: var(--royal-blue-light); 
-  }
-  .blog-card .card-text { 
-    margin-block: 15px; 
-  }
-  .blog-card .card-link {
-    position: relative;
-    color: var(--royal-blue-light);
-    font-weight: var(--weight-500);
-    text-transform: uppercase;
-    width: max-content;
-    transition: var(--transition);
-  }
-  .blog-card .card-link::after {
-    content: "";
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background-color: var(--royal-blue-light);
-    transition: var(--transition);
-  }
-  .blog-card .card-link:is(:hover, :focus) { 
-    color: var(--oxford-blue-1); 
-  }
-  .blog-card .card-link:is(:hover, :focus)::after { 
-    background-color: var(--oxford-blue-1); 
-  }
-
   /* FOOTER */
   .footer-top {
     background-color: var(--oxford-blue-2);
@@ -649,11 +578,6 @@
     margin-inline: auto;
   }
 
-  /* BLOG */
-  .blog-card .h3 { 
-    --fontSize-5: 2.6rem; 
-  }
-
   /* FOOTER */
   .footer-top .custom-container { 
     grid-template-columns: 1fr 1fr; 
@@ -736,11 +660,6 @@
   }
   .cta-content { 
     padding-block: 60px; 
-  }
-
-  /* BLOG */
-  .blog-list { 
-    grid-template-columns: 1fr 1fr; 
   }
 
   /* FOOTER */
@@ -881,11 +800,6 @@
   /* Call To Action */
   .cta-content { 
     padding-block: 80px; 
-  }
-
-  /* BLOG */
-  .blog-list { 
-    grid-template-columns: repeat(3, 1fr); 
   }
 
   /* FOOTER */

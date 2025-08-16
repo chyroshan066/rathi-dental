@@ -1,8 +1,9 @@
 export interface Services {
     id?: number;
     imgSrc: string;
-    title: string;
+    name: string;
     text: string;
+    href?: string;
 }
 
 interface IonIcon {
@@ -14,4 +15,9 @@ export interface Doctors {
     imgSrc: string;
     name: string;
     ionIcon: IonIcon[];
+}
+
+export interface Link {
+    name: string;
+    href: string;
 }

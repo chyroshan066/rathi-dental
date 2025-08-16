@@ -32,3 +32,5 @@ export const CallToAction = memo(() => (
         </div>
     </section>
 ));
+
+CallToAction.displayName = "CallToAction";
