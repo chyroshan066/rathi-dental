@@ -4,6 +4,7 @@ import { memo, useEffect, useState } from "react";
 import { IonIcon } from "./utility/IonIcon";
 import { NAVLINKS, SOCIALLINKS } from "@/constants";
 import { SocialLink } from "./utility/SocialLink";
+import { Button } from "./utility/Button";
 
 export const Header = memo(() => {
     const [isNavActive, setIsNavActive] = useState(false);
@@ -106,12 +107,10 @@ export const Header = memo(() => {
                         </ul>
                     </nav>
 
-                    <a
-                        href="#"
-                        className="btn"
-                    >
-                        Book appointment
-                    </a>
+                    <Button
+                        btnLink={"#"}
+                        btnText={"Book appointment"}
+                    />
 
                     <button
                         className={`nav-toggle-btn ${isNavActive ? 'active' : ''}`}

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { memo } from "react";
+import { Button } from "./utility/Button";
 
 export const CallToAction = memo(() => (
     <section
@@ -22,12 +23,12 @@ export const CallToAction = memo(() => (
             <div className="cta-content">
                 <p className="section-subtitle">Book Dentail Appointment</p>
                 <h2 className="h2 section-title">We Are open And Welcoming Patients</h2>
-                <a
-                    href="#"
-                    className="btn"
-                >
-                    Book appointment
-                </a>
+
+                <Button
+                    btnLink={"#"}
+                    btnText={"Book appointment"}
+                />
+
             </div>
         </div>
     </section>

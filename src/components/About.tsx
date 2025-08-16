@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { memo } from "react";
+import { Button } from "./utility/Button";
 
 export const About = memo(() => (
     <section
@@ -33,12 +34,12 @@ export const About = memo(() => (
                     dignissim enim.
                     Fusce elementum, augue in elementum porta, sapien nunc volutpat ex, a accumsan nunc lectus eu lectus.
                 </p>
-                <a
-                    href="#"
-                    className="btn"
-                >
-                    Read more
-                </a>
+
+                <Button
+                    btnLink={"#"}
+                    btnText={"Read more"}
+                />
+
             </div>
         </div>
     </section>
