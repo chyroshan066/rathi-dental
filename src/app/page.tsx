@@ -1,4 +1,5 @@
 import { About } from "@/components/About";
+import { BackToTop } from "@/components/BackToTop";
 import { CallToAction } from "@/components/CallToAction";
 import { Doctor } from "@/components/Doctor";
 import { Footer } from "@/components/Footer";
@@ -20,6 +21,7 @@ export default function Home() {
         </article>
       </main>
       <Footer />
+      <BackToTop />
     </>
   );
 }

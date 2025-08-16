@@ -13,3 +13,5 @@ export const TitleHeader = memo(({
         <h2 className="h2 section-title text-center">{subTitle}</h2>
     </>
 ));
+
+TitleHeader.displayName = "TitleHeader";
