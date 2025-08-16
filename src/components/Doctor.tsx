@@ -3,6 +3,7 @@ import { memo } from "react";
 import { IonIcon } from "./utility/IonIcon";
 import { Doctors } from "@/types";
 import { DOCTORS } from "@/constants";
+import { TitleHeader } from "./utility/TitleHeader";
 
 const DoctorCard = memo(({
     imgSrc, name, ionIcon
@@ -57,8 +58,12 @@ export const Doctor = memo(() => (
         aria-label="doctor"
     >
         <div className="custom-container">
-            <p className="section-subtitle text-center">Our Doctor</p>
-            <h2 className="h2 section-title text-center">Best Expert Dentist</h2>
+
+            <TitleHeader
+                title={"Our Doctor"}
+                subTitle={"Best Expert Dentist"}
+            />
+
             <ul className="has-scrollbar">
 
                 {DOCTORS.map((doctor, index) => (

@@ -2,6 +2,7 @@ import { SERVICES } from "@/constants";
 import { Services } from "@/types";
 import Image from "next/image";
 import { memo } from "react";
+import { TitleHeader } from "./utility/TitleHeader";
 
 const ServiceCard = memo(({
     imgSrc, name, text
@@ -35,8 +36,12 @@ export const Service = memo(() => (
         aria-label="service"
     >
         <div className="custom-container">
-            <p className="section-subtitle text-center">Our Services</p>
-            <h2 className="h2 section-title text-center">What We Provide</h2>
+
+            <TitleHeader
+                title={"Our Services"}
+                subTitle={"What We Provide"}
+            />
+
             <ul className="service-list">
 
                 {SERVICES
