@@ -1,7 +1,8 @@
 import { Link } from "@/types";
 import { IonIcon } from "./IonIcon";
+import { memo } from "react";
 
-export const SocialLink = ({
+export const SocialLink = memo(({
     href, name
 }: Link) => (
     <li>
@@ -12,4 +13,6 @@ export const SocialLink = ({
             <IonIcon name={name} />
         </a>
     </li>
-);
+));
+
+SocialLink.displayName = "SocialLink";

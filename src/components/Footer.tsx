@@ -133,15 +133,6 @@ export const Footer = memo(() => (
                 <ul className="social-list">
 
                     {SOCIALLINKS.map((link, index) => (
-                        // <li key={index}>
-                        //     <a
-                        //         href={link.href}
-                        //         className="social-link"
-                        //     >
-                        //         <IonIcon name={link.name} />
-                        //     </a>
-                        // </li>
-
                         <SocialLink
                             key={index}
                             href={link.href}
