@@ -7,10 +7,16 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { onSubmit } from "@/utils/formData";
 import { ReservationFormData, ReservationFormSchema } from "@/middlewares/schema";
-import { AlertState } from "@/types";
 import { SubmitButton } from "./utility/Button/SubmitButton";
 import { ErrorMessage, InputField } from "./utility/InputField";
 import { Alert } from "./Alert";
+
+interface AlertState {
+    isVisible: boolean;
+    type: "success" | "error";
+    title?: string;
+    message: string;
+}
 
 const initialValues: ReservationFormData = {
     name: "",
