@@ -22,10 +22,10 @@ export const ErrorMessage = memo(({
     if (!message) return null;
 
     return <span style={{
-        color: 'var(--gold-crayola)',
+        color: 'var(--carolina-blue)',
         fontSize: '0.875rem !important',
         display: 'block',
-        fontFamily: 'var(--fontFamily-dm_sans)',
+        fontFamily: 'var(--fontFamily-roboto)',
         marginTop: '0',
         paddingTop: '0',
         lineHeight: '1.2'

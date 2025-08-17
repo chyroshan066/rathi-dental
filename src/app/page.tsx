@@ -1,4 +1,5 @@
 import { About } from "@/components/About";
+import { Appintment } from "@/components/Appointment";
 import { BackToTop } from "@/components/BackToTop";
 import { CallToAction } from "@/components/CallToAction";
 import { Doctor } from "@/components/Doctor";
@@ -18,6 +19,7 @@ export default function Home() {
           <About />
           <Doctor />
           <CallToAction />
+          <Appintment />
         </article>
       </main>
       <Footer />

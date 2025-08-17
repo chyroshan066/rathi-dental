@@ -11,16 +11,10 @@ export const SubmitButton = memo(({
 }: SubmitButtonProps) => (
     <button
         type="submit"
-        className="btn btn-secondary"
+        className="btn"
         disabled={isButtonDisabled}
     >
-        <span className="text text-1">{btnText}</span>
-        <span
-            className="text text-2"
-            aria-hidden="true"
-        >
-            {btnText}
-        </span>
+        {btnText}
     </button>
 ));
 

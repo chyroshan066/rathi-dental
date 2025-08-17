@@ -127,7 +127,7 @@ export const Appintment = memo(() => {
             id="contact"
         >
             <div className="custom-container">
-                <div className="form reservation-form bg-black-10">
+                <div className="form reservation-form bg-blue-10">
                     <form
                         className="form-left"
                         onSubmit={onFormSubmit}
@@ -275,8 +275,8 @@ export const Appintment = memo(() => {
                     </form>
 
                     <div
-                        className="form-right text-center"
-                        style={{ "backgroundImage": "url('/images/form-pattern.webp')" } as React.CSSProperties}
+                        className="form-right text-center form-right-bg"
+                    // style={{ "backgroundImage": "url('/images/form-pattern.webp')" } as React.CSSProperties}
                     >
                         <h2 className="headline-1 text-center">Contact Us</h2>
                         <p className="contact-label">Booking Request</p>
