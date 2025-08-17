@@ -3,7 +3,7 @@ export interface Services {
     imgSrc: string;
     name: string;
     text: string;
-    href?: string;
+    href: string;
 }
 
 interface IonIcon {

@@ -4,7 +4,7 @@ import { memo, useEffect, useState } from "react";
 import { IonIcon } from "./utility/IonIcon";
 import { NAVLINKS, SOCIALLINKS } from "@/constants";
 import { SocialLink } from "./utility/SocialLink";
-import { Button } from "./utility/Button";
+import { Button } from "./utility/Button/Button";
 
 export const Header = memo(() => {
     const [isNavActive, setIsNavActive] = useState(false);
@@ -43,20 +43,20 @@ export const Header = memo(() => {
                         <li className="contact-item">
                             <IonIcon name="mail-outline" />
                             <a
-                                href="mailto:info@example.com"
+                                href="mailto:rathidental.ith@gmail.com"
                                 className="contact-link"
                             >
-                                info@example.com
+                                rathidental.ith@gmail.com
                             </a>
                         </li>
 
                         <li className="contact-item">
                             <IonIcon name="call-outline" />
                             <a
-                                href="tel:+917052101786"
+                                href="tel:025582240"
                                 className="contact-link"
                             >
-                                +91-7052-101-786
+                                025-582240
                             </a>
                         </li>
 
@@ -75,7 +75,7 @@ export const Header = memo(() => {
                 </div>
             </div>
             <div
-                className="header-bottom"
+                className={`header-bottom ${isHeaderActive ? 'active' : ''}`}
                 data-header
             >
                 <div className="custom-container">
@@ -83,7 +83,7 @@ export const Header = memo(() => {
                         href="#"
                         className="logo"
                     >
-                        Dentelo.
+                        Rathi Dental
                     </a>
                     <nav
                         className={`navbar custom-container ${isNavActive ? 'active' : ''}`}
@@ -108,7 +108,7 @@ export const Header = memo(() => {
                     </nav>
 
                     <Button
-                        btnLink={"#"}
+                        btnLink={"#contact"}
                         btnText={"Book appointment"}
                     />
 

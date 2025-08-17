@@ -5,9 +5,9 @@ import { memo } from "react";
 import { TitleHeader } from "./utility/TitleHeader";
 
 const ServiceCard = memo(({
-    imgSrc, name, text
+    imgSrc, name, text, href
 }: Services) => (
-    <li>
+    <li id={href}>
         <div className="service-card">
             <div className="card-icon">
                 <Image
@@ -48,10 +48,11 @@ export const Service = memo(() => (
                     .filter(service => service.id != null && service.id <= 3)
                     .map((service) => (
                         <ServiceCard
-                            key={service.id ? service.id : service.name}
+                            key={service.id ? service.id : service.href}
                             imgSrc={service.imgSrc}
                             name={service.name}
                             text={service.text}
+                            href={service.href}
                         />
                     ))
                 }
@@ -73,10 +74,50 @@ export const Service = memo(() => (
                     .filter(service => service.id != null && service.id > 3 && service.id <= 6)
                     .map((service) => (
                         <ServiceCard
-                            key={service.id ? service.id : service.name}
+                            key={service.id ? service.id : service.href}
                             imgSrc={service.imgSrc}
                             name={service.name}
                             text={service.text}
+                            href={service.href}
+                        />
+                    ))
+                }
+
+                {SERVICES
+                    .filter(service => service.id != null && service.id > 6 && service.id <= 9)
+                    .map((service) => (
+                        <ServiceCard
+                            key={service.id ? service.id : service.href}
+                            imgSrc={service.imgSrc}
+                            name={service.name}
+                            text={service.text}
+                            href={service.href}
+                        />
+                    ))
+                }
+
+                {SERVICES
+                    .filter(service => service.id != null && service.id > 9 && service.id <= 12)
+                    .map((service) => (
+                        <ServiceCard
+                            key={service.id ? service.id : service.href}
+                            imgSrc={service.imgSrc}
+                            name={service.name}
+                            text={service.text}
+                            href={service.href}
+                        />
+                    ))
+                }
+
+                {SERVICES
+                    .filter(service => service.id != null && service.id > 12)
+                    .map((service) => (
+                        <ServiceCard
+                            key={service.id ? service.id : service.href}
+                            imgSrc={service.imgSrc}
+                            name={service.name}
+                            text={service.text}
+                            href={service.href}
                         />
                     ))
                 }

@@ -14,7 +14,7 @@ export const NAVLINKS: Link[] = [
         name: "Services",
     },
     {
-        href: "#",
+        href: "#contact",
         name: "Contact",
     },
 ];

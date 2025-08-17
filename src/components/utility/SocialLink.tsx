@@ -9,6 +9,7 @@ export const SocialLink = memo(({
         <a
             href={href}
             className="social-link"
+            target="_blank"
         >
             <IonIcon name={name} />
         </a>

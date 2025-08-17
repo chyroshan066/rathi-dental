@@ -31,7 +31,7 @@ const FooterColumn = memo(({
         {list.map((link, index) => (
             <li key={index}>
                 <a
-                    href={link.href}
+                    href={link.href?.includes("#") ? link.href : `#${link.href}`}
                     className="footer-link"
                 >
                     <IonIcon name="add-outline" />
@@ -54,12 +54,10 @@ export const Footer = memo(() => (
                         href="#"
                         className="logo"
                     >
-                        Dentelo.
+                        Rathi Dental
                     </a>
                     <p className="footer-text">
-                        Mauris non nisi semper, lacinia neque in, dapibus leo. Curabitur sagittis libero tincidunt tempor finibus.
-                        Mauris at
-                        dignissim ligula, nec tristique orci.Quisque vitae metus.
+                        Your trusted <strong>dental clinic in Itahari</strong> for <strong>dental implants</strong>, <strong>braces</strong>, <strong>cosmetic dentistry</strong>, <strong>root canal</strong>, <strong>teeth whitening</strong>, <strong>orthodontics</strong>, and <strong>family dental care</strong> at an affordable price. Visit <strong>Rathi Dental Nepal</strong> for healthy smiles.
                     </p>
 
                     <div className="schedule">
@@ -67,8 +65,8 @@ export const Footer = memo(() => (
                             <IonIcon name="time-outline" />
                         </div>
                         <span className="span">
-                            Monday - Saturday:<br />
-                            9:00am - 10:00Pm
+                            Saturday - Sunday:<br />
+                            10:00 AM - 5:00 PM
                         </span>
                     </div>
 
@@ -92,8 +90,8 @@ export const Footer = memo(() => (
                             <IonIcon name="location-outline" />
                         </div>
                         <address className="item-text">
-                            1247/Plot No. 39, 15th Phase,<br />
-                            LHB Colony, Kanpur
+                            Hatiya Line, Itahari-6 <br />
+                            Sunsari, Nepal
                         </address>
                     </li>
 
@@ -105,7 +103,7 @@ export const Footer = memo(() => (
                             href="tel:+917052101786"
                             className="footer-link"
                         >
-                            +91-7052-101-786
+                            025-582240
                         </a>
                     </li>
 
@@ -117,7 +115,7 @@ export const Footer = memo(() => (
                             href="mailto:help@example.com"
                             className="footer-link"
                         >
-                            help@example.com
+                            rathidental.ith@gmail.com
                         </a>
                     </li>
 
@@ -128,7 +126,7 @@ export const Footer = memo(() => (
         <div className="footer-bottom">
             <div className="custom-container">
                 <p className="copyright">
-                    &copy; 2022 All Rights Reserved by codewithsadee.
+                    &copy; 2025 All Rights Reserved by Rathi Dental.
                 </p>
                 <ul className="social-list">
 

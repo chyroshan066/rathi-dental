@@ -2,7 +2,7 @@ import { Link } from "@/types";
 
 export const SOCIALLINKS: Link[] = [
     {
-        href: "#",
+        href: "https://www.facebook.com/rathidentalclinicitahari",
         name: "logo-facebook",
     },
     {

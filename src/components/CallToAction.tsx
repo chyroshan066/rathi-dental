@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { memo } from "react";
-import { Button } from "./utility/Button";
+import { Button } from "./utility/Button/Button";
 
 export const CallToAction = memo(() => (
     <section
