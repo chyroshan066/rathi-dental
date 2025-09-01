@@ -21,3 +21,10 @@ export interface Link {
     name: string;
     href: string;
 }
+
+export interface Photo {
+    id: number;
+    src: string;
+    alt: string;
+    title: string;
+}

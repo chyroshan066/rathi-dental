@@ -3,7 +3,7 @@ import z from "zod";
 export const ReservationFormSchema = z.object({
     name: z.string().min(1, "Name is required"),
     phone: z.string().min(1, "Phone number is required").regex(/^[\d\s+-]+$/, "Enter valid number"),
-    person: z.string().min(1, "Number of person is required"),
+    gender: z.string().min(1, "Select your Gender"),
     date: z.string()
     .min(1, "Date is required")
     .refine((dateString) => {

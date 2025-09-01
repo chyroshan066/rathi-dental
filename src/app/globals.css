@@ -467,6 +467,83 @@
     padding-inline: 15px;
   }
 
+  /* GALLERY */
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-block-start: 50px;
+  }
+  .gallery-card {
+    border-radius: var(--radius-6);
+    overflow: hidden;
+    box-shadow: var(--shadow-2);
+    transition: var(--transition);
+    position: relative;
+  }
+  .gallery-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-3);
+  }
+  .gallery-image {
+    position: relative;
+    border-radius: var(--radius-6);
+    overflow: hidden;
+  }
+  .gallery-img {
+    transition: var(--transition-2);
+  }
+  .gallery-card:hover .gallery-img {
+    transform: scale(1.05);
+  }
+  .gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      135deg,
+      var(--oxford-blue-1) 0%,
+      var(--carolina-blue) 100%
+    );
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-2);
+  }
+  .gallery-card:hover .gallery-overlay {
+    opacity: 0.9;
+  }
+  .gallery-content {
+    text-align: center;
+    color: var(--white);
+    transform: translateY(20px);
+    transition: var(--transition-2);
+  }
+  .gallery-card:hover .gallery-content {
+    transform: translateY(0);
+  }
+  .gallery-title {
+    font-family: var(--fontFamily-poppins);
+    font-size: var(--fontSize-5);
+    font-weight: var(--weight-600);
+    margin-block-end: 15px;
+  }
+  .gallery-icon-wrapper {
+    width: 60px;
+    height: 60px;
+    background-color: var(--white);
+    color: var(--carolina-blue);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-inline: auto;
+    font-size: 24px;
+  }
+
   /* DOCTOR */
   .doctor .section-title { 
     margin-block-end: 50px; 
@@ -813,6 +890,15 @@
     column-gap: 30px;
   }
 
+  /* GALLERY */
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+  .gallery-item-featured {
+    grid-row: span 1;
+  }
+
   /* DOCTOR */
   .scrollbar-item { 
     min-width: calc(50% - 15px); 
@@ -975,6 +1061,16 @@
     margin-block-end: 0; 
   }
 
+  /* GALLERY */
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  .gallery-item-featured {
+    grid-row: span 1;
+    grid-column: span 1;
+  }
+
   /* DOCTOR */
   .scrollbar-item { 
     min-width: calc(33.33% - 20px); 
@@ -1028,6 +1124,11 @@
   .about .custom-container {
     grid-template-columns: 0.85fr 1fr;
     gap: 100px;
+  }
+
+  /* GALLERY */
+  .gallery-grid {
+    gap: 35px;
   }
 
   /* DOCTOR */

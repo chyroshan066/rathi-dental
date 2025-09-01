@@ -21,7 +21,7 @@ interface AlertState {
 const initialValues: ReservationFormData = {
     name: "",
     phone: "",
-    person: "1-person",
+    gender: "Male",
     date: "",
     time: "10:00am",
     message: "",
@@ -133,9 +133,9 @@ export const Appintment = memo(() => {
                         onSubmit={onFormSubmit}
                         noValidate
                     >
-                        <h2 className="headline-1 text-center">Online Reservation</h2>
+                        <h2 className="headline-1 text-center">Book Appointment</h2>
                         <p className="form-text text-center">
-                            Booking request <a href="tel:+88123123456" className="link">+88-123-123456 </a>
+                            Booking request <a href="tel:+977-25-582240" className="link">+977-25-582240 </a>
                             or fill out the order form
                         </p>
                         <div className="input-wrapper">
@@ -171,20 +171,20 @@ export const Appintment = memo(() => {
                                 />
 
                                 <select
-                                    {...register("person")}
+                                    {...register("gender")}
                                     className="input-field"
                                 >
-                                    {[...Array(7)].map((_, index) => (
+                                    {["Male", "Female"].map((gender, index) => (
                                         <option
                                             key={index}
-                                            value={`${index + 1}-person`}
+                                            value={gender}
                                         >
-                                            {index + 1} Person
+                                            {gender}
                                         </option>
                                     ))}
                                 </select>
 
-                                <ErrorMessage message={errors.person?.message} />
+                                <ErrorMessage message={errors.gender?.message} />
 
                                 <IonIcon
                                     name="chevron-down"
@@ -235,7 +235,7 @@ export const Appintment = memo(() => {
                                         </option>
                                     ))}
 
-                                    {[...Array(10)].map((_, index) => (
+                                    {[...Array(5)].map((_, index) => (
                                         <option
                                             key={index}
                                             value={`${index < 9 ? `0${1 + index}` : 1 + index}:00pm`}

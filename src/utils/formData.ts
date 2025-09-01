@@ -3,7 +3,7 @@ import emailjs from "@emailjs/browser";
 interface Reservation extends Record<string, unknown>  {
     name: string;
     phone: string;
-    person: string;
+    gender: string;
     date: string;
     time: string;
     message: string;
@@ -26,7 +26,7 @@ export const onSubmit = async (data: Reservation) => {
         const payload: Email = {
             name: data.name,
             phone: data.phone,
-            person: data.person,
+            gender: data.gender,
             date: data.date,
             time: data.time,
             message: data.message,

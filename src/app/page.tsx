@@ -4,6 +4,7 @@ import { BackToTop } from "@/components/BackToTop";
 import { CallToAction } from "@/components/CallToAction";
 import { Doctor } from "@/components/Doctor";
 import { Footer } from "@/components/Footer";
+import { Gallery } from "@/components/Gallery";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { Service } from "@/components/Service";
@@ -17,6 +18,7 @@ export default function Home() {
           <Hero />
           <Service />
           <About />
+          <Gallery />
           <Doctor />
           <CallToAction />
           <Appintment />
