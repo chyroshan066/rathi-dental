@@ -921,6 +921,25 @@
     padding-block: 60px; 
   }
 
+  /* TESTIMONIAL */
+  .testimonial-content {
+    padding: 20px;
+  }                
+  .patient-image {
+    width: 80px !important;
+    height: 80px !important;
+    margin-block-end: 20px !important;
+    margin-inline-end: 0 !important;
+  }                  
+  .testimonial-text {
+    font-size: var(--fontSize-7) !important;
+  }
+  .statistics-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+
+
   /* APPOINTMENT */
   .reservation .input-wrapper {
     display: grid;
@@ -1079,6 +1098,12 @@
   /* Call To Action */
   .cta-content { 
     padding-block: 80px; 
+  }
+
+  /* TESTIMONIAL */
+  .patient-image {
+    width: 140px !important;
+    height: 140px !important;
   }
 
   /* APPOINTMENT */

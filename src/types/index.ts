@@ -22,6 +22,15 @@ export interface Link {
     href: string;
 }
 
+export interface Testimonial {
+    id: number;
+    name: string;
+    rating: number;
+    text: string;
+    image: string;
+    position?: string;
+}
+
 export interface Photo {
     id: number;
     src: string;
