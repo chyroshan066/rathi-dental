@@ -7,6 +7,7 @@ import { Footer } from "@/components/Footer";
 import { Gallery } from "@/components/Gallery";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
+import { Maps } from "@/components/Maps";
 import { Service } from "@/components/Service";
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
           <Doctor />
           <CallToAction />
           <Appintment />
+          <Maps />
         </article>
       </main>
       <Footer />
