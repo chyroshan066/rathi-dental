@@ -2,19 +2,19 @@ import { Link } from "@/types";
 
 export const NAVLINKS: Link[] = [
     {
-        href: "#home",
+        href: "/#home",
         name: "Home",
     },
     {
-        href: "#about",
+        href: "/#about",
         name: "About Us",
     },
     {
-        href: "#service",
+        href: "/#service",
         name: "Services",
     },
     {
-        href: "#contact",
-        name: "Contact",
+        href: "/gallery",
+        name: "Gallery",
     },
 ];

@@ -31,7 +31,7 @@ ServiceCard.displayName = "ServiceCard";
 
 export const Service = memo(() => (
     <section
-        className="section service"
+        className="section service -mt-50 lg:-mt-40"
         id="service"
         aria-label="service"
     >
@@ -60,7 +60,7 @@ export const Service = memo(() => (
                 <li className="service-banner">
                     <figure>
                         <Image
-                            src="/images/service-banner.png"
+                            src="/images/service-banner.webp"
                             width={409}
                             height={467}
                             loading="lazy"

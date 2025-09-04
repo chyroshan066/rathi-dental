@@ -6,7 +6,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { onSubmit } from "@/utils/formData";
-import { ReservationFormData, ReservationFormSchema } from "@/middlewares/schema";
+import { AppointmentFormData, AppointmentFormSchema } from "@/middlewares/schema";
 import { SubmitButton } from "./utility/Button/SubmitButton";
 import { ErrorMessage, InputField } from "./utility/InputField";
 import { Alert } from "./Alert";
@@ -18,12 +18,12 @@ interface AlertState {
     message: string;
 }
 
-const initialValues: ReservationFormData = {
+const initialValues: AppointmentFormData = {
     name: "",
     phone: "",
     gender: "Male",
     date: "",
-    time: "10:00am",
+    time: "09:00am",
     message: "",
 };
 
@@ -42,9 +42,9 @@ export const Appintment = memo(() => {
             errors,
             isSubmitting,
         }
-    } = useForm<ReservationFormData>({
+    } = useForm<AppointmentFormData>({
         defaultValues: initialValues,
-        resolver: zodResolver(ReservationFormSchema),
+        resolver: zodResolver(AppointmentFormSchema),
         mode: "onChange", // Enable real-time validation for better UX
         reValidateMode: "onChange", // Re-validate on every change
         criteriaMode: "all", // Show all validation errors
@@ -71,21 +71,21 @@ export const Appintment = memo(() => {
         }));
     }, []);
 
-    const handleFormSubmit = useCallback(async (data: ReservationFormData) => {
+    const handleFormSubmit = useCallback(async (data: AppointmentFormData) => {
         try {
             await onSubmit(data);
 
             showAlert(
                 "success",
-                "Thank you! Your table has been reserved successfully. We look forward to serving you.",
-                "Table Reserved!"
+                "Thank you! Your appointment has been booked successfully. We look forward to serving you.",
+                "Appointment Booked!"
             );
 
             reset(initialValues);
         } catch (error) {
             const errorMessage = error instanceof Error
                 ? error.message
-                : "Something went wrong while booking the table. Please try again.";
+                : "Something went wrong while booking an appointment. Please try again.";
 
             showAlert(
                 "error",
@@ -105,7 +105,7 @@ export const Appintment = memo(() => {
     );
 
     const buttonText = useMemo(
-        () => isSubmitting ? "Booking..." : "Book A Table",
+        () => isSubmitting ? "Booking..." : "Book An Appointment",
         [isSubmitting]
     );
 
@@ -135,8 +135,8 @@ export const Appintment = memo(() => {
                     >
                         <h2 className="headline-1 text-center">Book Appointment</h2>
                         <p className="form-text text-center">
-                            Booking request <a href="tel:+977-25-582240" className="link">+977-25-582240 </a>
-                            or fill out the order form
+                            Booking request <a href="tel:+977025582240" className="link">025-582240 </a>
+                            or fill out the appointment form
                         </p>
                         <div className="input-wrapper">
 
@@ -226,16 +226,16 @@ export const Appintment = memo(() => {
                                     {...register("time")}
                                     className="input-field"
                                 >
-                                    {[...Array(3)].map((_, index) => (
+                                    {[...Array(4)].map((_, index) => (
                                         <option
                                             key={index}
-                                            value={`${10 + index}:00am`}
+                                            value={`${index < 1 ? `0${9 + index}` : 9 + index}:00am`}
                                         >
-                                            {10 + index} : 00 am
+                                            {index < 1 ? `0${9 + index}` : 9 + index} : 00 am
                                         </option>
                                     ))}
 
-                                    {[...Array(5)].map((_, index) => (
+                                    {[...Array(7)].map((_, index) => (
                                         <option
                                             key={index}
                                             value={`${index < 9 ? `0${1 + index}` : 1 + index}:00pm`}
@@ -274,28 +274,25 @@ export const Appintment = memo(() => {
 
                     </form>
 
-                    <div
-                        className="form-right text-center form-right-bg"
-                    // style={{ "backgroundImage": "url('/images/form-pattern.webp')" } as React.CSSProperties}
-                    >
+                    <div className="form-right text-center form-right-bg">
                         <h2 className="headline-1 text-center">Contact Us</h2>
                         <p className="contact-label">Booking Request</p>
                         <a
-                            href="tel:+88123123456"
+                            href="tel:+977025582240"
                             className="body-1 contact-number hover-underline"
                         >
-                            +977-25-570068
+                            025-582240
                         </a>
                         <div className="separator"></div>
                         <p className="contact-label">Location</p>
                         <address className="body-4">
-                            Ganeshman Chowk,  <br />
-                            Dharan, Nepal
+                            Hatiya Line,  <br />
+                            Itahari-6, Nepal
                         </address>
                         <p className="contact-label">Daily</p>
                         <p className="body-4">
                             Monday to Sunday <br />
-                            9.00 am - 10.00pm
+                            9.00 am - 7.00pm
                         </p>
                     </div>
                 </div>

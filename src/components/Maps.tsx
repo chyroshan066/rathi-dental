@@ -248,7 +248,7 @@ export const Maps: React.FC = () => {
                                     width: '40px',
                                     height: '40px',
                                     border: '4px solid var(--light-gray)',
-                                    borderTop: '4px solid var(--royal-blue-light)',
+                                    borderTop: '4px solid var(--royal-purple)',
                                     borderRadius: '50%',
                                     animation: 'spin 1s linear infinite',
                                     marginInline: 'auto',
@@ -288,7 +288,7 @@ export const Maps: React.FC = () => {
         
         .leaflet-control-zoom a {
           background-color: var(--white) !important;
-          color: var(--oxford-blue-1) !important;
+          color: var(--deep-purple-1) !important;
           border: none !important;
           border-radius: var(--radius-4) !important;
           font-weight: var(--weight-700) !important;
@@ -296,7 +296,7 @@ export const Maps: React.FC = () => {
         }
         
         .leaflet-control-zoom a:hover {
-          background-color: var(--royal-blue-light) !important;
+          background-color: var(--royal-purple) !important;
           color: var(--white) !important;
         }
         

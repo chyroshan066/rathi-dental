@@ -3,6 +3,9 @@ import "./globals.css";
 import localFont from "next/font/local";
 import IonicScripts from "@/utils/IonicScripts";
 import AnalyticsWrapper from "@/utils/AnalyticsWrapper";
+import { Header } from "@/components/Header";
+import { BackToTop } from "@/components/BackToTop";
+import { Footer } from "@/components/Footer";
 
 const roboto = localFont({
   src: [
@@ -185,7 +188,10 @@ export default function RootLayout({
         suppressHydrationWarning={true}
         id="top"
       >
+        <Header />
         {children}
+        <Footer />
+        <BackToTop />
         <IonicScripts />
         <AnalyticsWrapper />
       </body>

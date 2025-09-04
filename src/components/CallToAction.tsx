@@ -4,14 +4,14 @@ import { Button } from "./utility/Button/Button";
 
 export const CallToAction = memo(() => (
     <section
-        className="section cta"
+        className="section cta lg:mt-70 mt-40"
         aria-label="cta"
     >
         <div className="custom-container">
 
             <figure className="cta-banner">
                 <Image
-                    src="/images/cta-banner.png"
+                    src="/images/cta-banner.webp"
                     width={1056}
                     height={1076}
                     loading="lazy"

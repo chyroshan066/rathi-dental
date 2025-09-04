@@ -92,11 +92,4 @@ export const SERVICES: Services[] = [
         text: "Specialized care to eliminate bad breath and restore fresh confidence.",
         href: "halitosis-treatment"
     },
-    {
-        id: 14,
-        imgSrc: "/images/service-icons/service-icon-14.webp",
-        name: "Boil Treatment",
-        text: "Professional care to treat oral boils and prevent painful infections.",
-        href: "boil-treatment"
-    },
 ];

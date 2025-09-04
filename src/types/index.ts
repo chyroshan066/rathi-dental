@@ -37,3 +37,12 @@ export interface Photo {
     alt: string;
     title: string;
 }
+
+export interface MediaItem {
+  id: number;
+  src: string;
+  alt: string;
+  title: string;
+  type: 'image' | 'video';
+  poster?: string; // Optional thumbnail for videos
+}

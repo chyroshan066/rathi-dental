@@ -1,17 +1,18 @@
 "use client";
 
-import { ReservationFormData, SubscriptionFormData } from "@/middlewares/schema";
+import { AppointmentFormData, SubscriptionFormData } from "@/middlewares/schema";
 import { memo } from "react";
 import { UseFormRegister, UseFormRegisterReturn } from "react-hook-form";
 
 interface FormFieldProps {
-    id: keyof ReservationFormData | keyof SubscriptionFormData;
+    id: keyof AppointmentFormData | keyof SubscriptionFormData;
     placeholder?: string;
     type?: string;
-    register: UseFormRegister<ReservationFormData | SubscriptionFormData> | UseFormRegisterReturn;
+    register: UseFormRegister<AppointmentFormData | SubscriptionFormData> | UseFormRegisterReturn;
     error?: string;
     disabled?: boolean;
     isTextarea?: boolean;
+    className?: string;
 };
 
 export const ErrorMessage = memo(({
@@ -22,7 +23,7 @@ export const ErrorMessage = memo(({
     if (!message) return null;
 
     return <span style={{
-        color: 'var(--carolina-blue)',
+        color: 'var(--lavender-blue)',
         fontSize: '0.875rem !important',
         display: 'block',
         fontFamily: 'var(--fontFamily-roboto)',
@@ -44,7 +45,8 @@ export const InputField = memo((
         register,
         error,
         disabled,
-        isTextarea = false
+        isTextarea = false,
+        className = "input-field"
     }: FormFieldProps
 ) => {
     const handleDateChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -144,14 +146,14 @@ export const InputField = memo((
                 type={type}
                 placeholder={placeholder}
                 autoComplete="off"
-                className="input-field"
+                className={className}
                 onChange={type === "date" ? handleDateChange : handleInputChange}
                 min={getMinDate()} // ADDED: Prevent past dates at HTML level
                 disabled={disabled}
                 style={{
                     marginBottom: '0',
                     display: 'block',
-                    width: '100%'
+                    width: '100%',
                 }}
             />
             <ErrorMessage message={error} />

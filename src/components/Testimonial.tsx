@@ -13,12 +13,12 @@ interface Statistics {
 }
 
 const STATISTICS: Statistics[] = [
+    // {
+    //     title: "1100+",
+    //     subTitle: "Happy Patients",
+    // },
     {
-        title: "1100+",
-        subTitle: "Happy Patients",
-    },
-    {
-        title: "5+",
+        title: "17+",
         subTitle: "Years Experience",
     },
     {
@@ -61,7 +61,7 @@ const TestimonialModal = memo(({
             onClick={onClose}
         >
             <div
-                className="relative w-full max-w-4xl max-h-[90vh] overflow-y-auto shadow-2xl transform transition-all duration-300 scale-100"
+                className="relative w-full max-w-6xl max-h-[90vh] overflow-y-auto shadow-2xl transform transition-all duration-300 scale-100"
                 style={{
                     backgroundColor: 'var(--white)',
                     borderRadius: 'var(--radius-6)',
@@ -110,7 +110,7 @@ const TestimonialModal = memo(({
                                         width: '120px',
                                         height: '120px',
                                         borderRadius: '50%',
-                                        border: '4px solid var(--lavender-web)'
+                                        border: '4px solid var(--lavender-mist)'
                                     }}
                                     priority={false}
                                 />
@@ -119,7 +119,7 @@ const TestimonialModal = memo(({
                                 <QuotesIcon
                                     size={64}
                                     style={{
-                                        color: 'var(--lavender-web)',
+                                        color: 'var(--lavender-mist)',
                                         opacity: '0.3'
                                     }}
                                     weight="fill"
@@ -168,7 +168,7 @@ const TestimonialModal = memo(({
                                         className="font-semibold mb-1 truncate"
                                         style={{
                                             fontSize: 'var(--fontSize-4)',
-                                            color: 'var(--royal-blue-light)'
+                                            color: 'var(--royal-purple)'
                                         }}
                                     >
                                         {testimonial.name}
@@ -336,7 +336,7 @@ export const TestimonialSlider = memo(() => {
                                             style={{
                                                 top: '25px',
                                                 left: '25px',
-                                                color: 'var(--lavender-web)'
+                                                color: 'var(--lavender-mist)'
                                             }}
                                         >
                                             <QuotesIcon size={48} color="currentColor" weight="fill" />
@@ -361,7 +361,7 @@ export const TestimonialSlider = memo(() => {
                                                         width: '120px',
                                                         height: '120px',
                                                         borderRadius: '50%',
-                                                        border: '4px solid var(--lavender-web)'
+                                                        border: '4px solid var(--lavender-mist)'
                                                     }}
                                                 />
 
@@ -426,7 +426,7 @@ export const TestimonialSlider = memo(() => {
                                                         onClick={() => openModal(testimonial)}
                                                         className="transition-colors duration-200 cursor-pointer -mt-5"
                                                         style={{
-                                                            color: 'var(--royal-blue-light)',
+                                                            color: 'var(--royal-purple)',
                                                             fontSize: 'var(--fontSize-7)',
                                                             fontWeight: 'var(--weight-600)',
                                                             marginBlockEnd: '10px',
@@ -434,10 +434,10 @@ export const TestimonialSlider = memo(() => {
                                                             border: 'none'
                                                         }}
                                                         onMouseOver={(e) => {
-                                                            e.currentTarget.style.color = 'var(--oxford-blue-1)';
+                                                            e.currentTarget.style.color = 'var(--deep-purple-1)';
                                                         }}
                                                         onMouseOut={(e) => {
-                                                            e.currentTarget.style.color = 'var(--royal-blue-light)';
+                                                            e.currentTarget.style.color = 'var(--royal-purple)';
                                                         }}
                                                     >
                                                         Read More
@@ -450,7 +450,7 @@ export const TestimonialSlider = memo(() => {
                                                 <h4
                                                     className="h3"
                                                     style={{
-                                                        color: 'var(--oxford-blue-1)',
+                                                        color: 'var(--deep-purple-1)',
                                                         marginBlockEnd: '5px'
                                                     }}
                                                 >
@@ -483,8 +483,8 @@ export const TestimonialSlider = memo(() => {
                                 cursor: 'pointer'
                             }}
                             onMouseOver={(e) => {
-                                e.currentTarget.style.backgroundColor = 'var(--lavender-web)';
-                                e.currentTarget.style.color = 'var(--royal-blue-light)';
+                                e.currentTarget.style.backgroundColor = 'var(--lavender-mist)';
+                                e.currentTarget.style.color = 'var(--royal-purple)';
                             }}
                             onMouseOut={(e) => {
                                 e.currentTarget.style.backgroundColor = 'var(--white)';
@@ -513,8 +513,8 @@ export const TestimonialSlider = memo(() => {
                                 cursor: 'pointer'
                             }}
                             onMouseOver={(e) => {
-                                e.currentTarget.style.backgroundColor = 'var(--lavender-web)';
-                                e.currentTarget.style.color = 'var(--royal-blue-light)';
+                                e.currentTarget.style.backgroundColor = 'var(--lavender-mist)';
+                                e.currentTarget.style.color = 'var(--royal-purple)';
                             }}
                             onMouseOut={(e) => {
                                 e.currentTarget.style.backgroundColor = 'var(--white)';
@@ -539,7 +539,7 @@ export const TestimonialSlider = memo(() => {
                                     width: index === currentSlide ? '32px' : '12px',
                                     height: '12px',
                                     borderRadius: 'var(--radius-6)',
-                                    backgroundColor: index === currentSlide ? 'var(--royal-blue-light)' : 'var(--light-gray)',
+                                    backgroundColor: index === currentSlide ? 'var(--royal-purple)' : 'var(--light-gray)',
                                     transition: 'var(--transition)',
                                     border: 'none',
                                     cursor: 'pointer'
@@ -561,10 +561,12 @@ export const TestimonialSlider = memo(() => {
 
                     {/* Statistics */}
                     <div
-                        className="grid grid-cols-1 md:grid-cols-3 text-center"
+                        className="grid grid-cols-1 md:grid-cols-2 text-center justify-center"
                         style={{
                             gap: '30px',
-                            marginBlockStart: '60px'
+                            marginBlockStart: '60px',
+                            maxWidth: '600px',
+                            margin: '60px auto 0 auto'
                         }}
                     >
                         {STATISTICS.map((data, index) => (
@@ -582,7 +584,7 @@ export const TestimonialSlider = memo(() => {
                                 <div style={{
                                     fontSize: 'var(--fontSize-1)',
                                     fontWeight: 'var(--weight-700)',
-                                    color: 'var(--royal-blue-light)',
+                                    color: 'var(--royal-purple)',
                                     marginBlockEnd: '8px'
                                 }}>
                                     {data.title}

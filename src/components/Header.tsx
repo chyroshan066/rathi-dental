@@ -5,6 +5,7 @@ import { IonIcon } from "./utility/IonIcon";
 import { NAVLINKS, SOCIALLINKS } from "@/constants";
 import { SocialLink } from "./utility/SocialLink";
 import { Button } from "./utility/Button/Button";
+import Image from "next/image";
 
 export const Header = memo(() => {
     const [isNavActive, setIsNavActive] = useState(false);
@@ -79,12 +80,20 @@ export const Header = memo(() => {
                 data-header
             >
                 <div className="custom-container">
+
                     <a
-                        href="#"
+                        href="/"
                         className="logo"
                     >
-                        Rathi Dental
+                        {/* Rathi Dental */}
+                        <Image
+                            width={120}
+                            height={80}
+                            src="/images/logo.webp"
+                            alt="logo"
+                        />
                     </a>
+
                     <nav
                         className={`navbar custom-container ${isNavActive ? 'active' : ''}`}
                         data-navbar

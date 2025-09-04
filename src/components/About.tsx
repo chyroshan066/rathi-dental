@@ -11,7 +11,7 @@ export const About = memo(() => (
 
             <figure className="about-banner">
                 <Image
-                    src="/images/about-banner.png"
+                    src="/images/about-banner.webp"
                     width={470}
                     height={538}
                     loading="lazy"
@@ -27,7 +27,7 @@ export const About = memo(() => (
                     Welcome to <b>Rathi Dental Clinic</b>, your trusted <b>dental clinic in Itahari</b> located at Hatiya Line, Itahari-6, Sunsari, Nepal. With the motto <i>“Professional Dentist, Advanced Technology and Affordable Price”</i>, we are committed to providing high-quality <b>dental care in Nepal</b> for every smile.
                 </p>
                 <p className="section-text">
-                    Our team of experienced dentists offers a full range of treatments including <b>dental implants, braces, cosmetic dentistry, root canal, teeth whitening, orthodontics, gum treatment, oral surgery,</b> and <b>tooth extraction.</b> We also specialize in <b>pediatric dentistry,</b> ensuring gentle care for children, as well as <b>family dentist services in Itahari</b> for all ages.
+                    Our team of experienced dentists offers a full range of treatments including <b>dental implants, braces, cosmetic dentistry, root canal, teeth whitening, orthodontic treatment, gum treatment, oral surgery,</b> and <b>tooth extraction.</b> We also specialize in <b>pediatric dentistry,</b> ensuring gentle care for children, as well as <b>family dentist services in Itahari</b> for all ages.
                 </p>
                 <p className="section-text section-text-1">
                     At <b>Rathi Dental Nepal</b>, we combine modern technology with compassionate care to make treatments comfortable and accessible. Whether you need a routine <b>dental checkup in Itahari, emergency dental care,</b> or advanced solutions for restoring your smile, our clinic ensures the best outcomes at an <b>affordable price.</b>

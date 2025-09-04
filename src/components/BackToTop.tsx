@@ -23,7 +23,7 @@ export const BackToTop = memo(() => {
     }, []);
 
     return <a
-        href="#top"
+        href="#"
         className={`back-top-btn ${isActive ? 'active' : ''}`}
         aria-label="back to top"
         data-back-top-btn
