@@ -5,12 +5,10 @@ import { IonIcon } from './utility/IonIcon';
 
 interface IntroProps {
     videoUrl?: string;
-    posterImage?: string;
 }
 
 export const Intro = memo(({
-    videoUrl = "/images/media/videos/v1.webm",
-    posterImage = "/images/video-poster.webp"
+    videoUrl = "/images/media/videos/v1.webm"
 }: IntroProps) => {
     const [isPlaying, setIsPlaying] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
@@ -101,7 +99,6 @@ export const Intro = memo(({
                             <video
                                 ref={videoRef}
                                 className="intro-video"
-                                poster={posterImage}
                                 onEnded={handleVideoEnded}
                                 onLoadStart={() => setIsLoading(true)}
                                 onCanPlay={() => setIsLoading(false)}
