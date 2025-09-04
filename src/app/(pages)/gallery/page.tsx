@@ -6,7 +6,6 @@ export default function GalleryPage() {
     <main>
       <Gallery
         mediaItems={MEDIA_ITEMS}
-        itemsPerPage={12}
       />
     </main>
   );
