@@ -92,4 +92,11 @@ export const SERVICES: Services[] = [
         text: "Specialized care to eliminate bad breath and restore fresh confidence.",
         href: "halitosis-treatment"
     },
+    {
+        id: 14,
+        imgSrc: "/images/service-icons/service-icon-14.webp",
+        name: "Dental Implant",
+        text: "Permanent tooth replacement that looks, feels, and functions like your natural teeth.",
+        href: "dental-implant"
+    },
 ];
