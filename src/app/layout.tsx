@@ -100,7 +100,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Rathi Dental" }],
   creator: "Rathi Dental",
   publisher: "Rathi Dental",
-  // metadataBase: new URL("https://www.rathidental.com/"),
+  metadataBase: new URL("https://www.rathidentalclinic.com/"),
   alternates: {
     canonical: "/",
   },
@@ -153,16 +153,16 @@ export const metadata: Metadata = {
     description: "Expert dentists in Itahari offering dental implants, braces, root canals, cosmetic dentistry, and preventive care in a modern, patient-friendly clinic.",
     type: "website",
     locale: "en_US",
-    // url: "https://www.rathidental.com/",
+    url: "https://www.rathidentalclinic.com/",
     siteName: "Rathi Dental",
-    // images: [
-    //   {
-    //     url: "/images/preview.webp",
-    //     width: 1200,
-    //     height: 630,
-    //     alt: "Rathi Dental Clinic Preview",
-    //   }
-    // ],
+    images: [
+      {
+        url: "/images/preview.webp",
+        width: 1200,
+        height: 630,
+        alt: "Rathi Dental Clinic Preview",
+      }
+    ],
   },
   category: "health",
   classification: "Dental Clinic",
