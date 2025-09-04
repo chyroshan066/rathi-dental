@@ -165,3 +165,5 @@ export const Intro = memo(({
         </section>
     );
 });
+
+Intro.displayName = "Intro";

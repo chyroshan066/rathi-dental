@@ -6,6 +6,7 @@ import { NAVLINKS, SOCIALLINKS } from "@/constants";
 import { SocialLink } from "./utility/SocialLink";
 import { Button } from "./utility/Button/Button";
 import Image from "next/image";
+import Link from "next/link";
 
 export const Header = memo(() => {
     const [isNavActive, setIsNavActive] = useState(false);
@@ -81,7 +82,7 @@ export const Header = memo(() => {
             >
                 <div className="custom-container">
 
-                    <a
+                    <Link
                         href="/"
                         className="logo"
                     >
@@ -92,7 +93,7 @@ export const Header = memo(() => {
                             src="/images/logo.webp"
                             alt="logo"
                         />
-                    </a>
+                    </Link>
 
                     <nav
                         className={`navbar custom-container ${isNavActive ? 'active' : ''}`}
@@ -102,14 +103,14 @@ export const Header = memo(() => {
 
                             {NAVLINKS.map((link, index) => (
                                 <li key={index}>
-                                    <a
+                                    <Link
                                         href={link.href}
                                         className="navbar-link"
                                         onClick={closeNav}
                                         data-nav-link
                                     >
                                         {link.name}
-                                    </a>
+                                    </Link>
                                 </li>
                             ))}
 
@@ -117,7 +118,7 @@ export const Header = memo(() => {
                     </nav>
 
                     <Button
-                        btnLink={"#contact"}
+                        btnLink={"/#contact"}
                         btnText={"Book appointment"}
                     />
 

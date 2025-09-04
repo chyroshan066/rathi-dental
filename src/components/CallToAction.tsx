@@ -25,7 +25,7 @@ export const CallToAction = memo(() => (
                 <h2 className="h2 section-title">We Are open And Welcoming Patients</h2>
 
                 <Button
-                    btnLink={"#"}
+                    btnLink={"#contact"}
                     btnText={"Book appointment"}
                 />
 

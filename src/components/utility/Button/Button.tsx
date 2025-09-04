@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { memo } from "react";
 
 interface Button {
@@ -8,12 +9,12 @@ interface Button {
 export const Button = memo(({
     btnLink, btnText
 }: Button) => (
-    <a
+    <Link
         href={btnLink}
         className="btn"
     >
         {btnText}
-    </a>
+    </Link>
 ));
 
 Button.displayName = "Button";

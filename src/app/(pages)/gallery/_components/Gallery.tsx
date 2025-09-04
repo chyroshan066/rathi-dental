@@ -6,18 +6,10 @@ import { useState, useRef, useEffect } from 'react';
 import { MediaItem } from '@/types';
 
 interface GalleryProps {
-  itemsPerPage?: number;
   mediaItems: MediaItem[];
 }
 
-interface Stats {
-  number: string | number;
-  label: string;
-  icon: string;
-}
-
 export default function Gallery({
-  itemsPerPage = 12,
   mediaItems = []
 }: GalleryProps) {
   const [selectedMedia, setSelectedMedia] = useState<number | null>(null);
@@ -271,7 +263,7 @@ export default function Gallery({
               </div>
               <h3 className="empty-title">No Media Available</h3>
               <p className="empty-text">
-                We're working on updating our gallery. Check back soon for updates!
+                We&apos;re working on updating our gallery. Check back soon for updates!
               </p>
             </div>
           )}
