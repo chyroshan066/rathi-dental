@@ -865,13 +865,11 @@
   .cta .btn { 
     max-width: max-content; 
   }
-
+  
   /* APPOINTMENT */
-  /* .reservation-form { 
-    margin-block-start: -270px; 
-  } */
   .reservation-form { 
-    margin-block: 50px; 
+    margin-block-start: 120px; 
+    margin-block-end: 50px; 
     color: var(--white);
   }
   .form-text { 
@@ -1052,6 +1050,11 @@
   }
   .contact-number { 
     --fontSize-body-1: 3rem; 
+  }
+
+  /* APPOINTMENT */
+  .reservation-form {
+    margin-block-end: 10px;
   }
 
   /* FOOTER */
