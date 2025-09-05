@@ -1035,6 +1035,13 @@
   }
 }
 
+@media (min-width: 480px) {
+  /* APPOINTMENT */
+  .reservation-form {
+    margin-block-end: 10px;
+  }
+}
+
 /* MEDIA QUERIES */
 @media (min-width: 575px) {
   :root {
@@ -1050,11 +1057,6 @@
   }
   .contact-number { 
     --fontSize-body-1: 3rem; 
-  }
-
-  /* APPOINTMENT */
-  .reservation-form {
-    margin-block-end: 10px;
   }
 
   /* FOOTER */
