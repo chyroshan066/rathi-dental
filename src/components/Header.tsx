@@ -55,7 +55,7 @@ export const Header = memo(() => {
                         <li className="contact-item">
                             <IonIcon name="call-outline" />
                             <a
-                                href="tel:025582240"
+                                href="tel:+97725582240"
                                 className="contact-link"
                             >
                                 025-582240

@@ -100,7 +100,7 @@ export const Footer = memo(() => (
                             <IonIcon name="call-outline" />
                         </div>
                         <a
-                            href="tel:+917052101786"
+                            href="tel:+97725582240"
                             className="footer-link"
                         >
                             025-582240
