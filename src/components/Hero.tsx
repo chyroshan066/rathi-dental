@@ -124,7 +124,8 @@ export const Hero = memo(() => {
             <div className="custom-container">
                 <div className="hero-content">
                     <p className="section-subtitle">Welcome To Rathi Dental</p>
-                    <h1 className="h1 hero-title">We Are Best Dental Service</h1>
+                    <h1 className="h25 hero-title">We Are The Best Dental Service Provider In Town</h1>
+                    {/* <h1 className="h1 hero-title">We Are Best Dental Service</h1> */}
                     <p className="hero-text">
                         Transforming smiles with precision, care, and cutting-edge technology. Experience dentistry that exceeds expectations.
                     </p>

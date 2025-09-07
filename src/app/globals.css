@@ -198,7 +198,8 @@
   }
   .h1,
   .h2,
-  .h3 {
+  .h3,
+  .h25 {
     font-family: var(--fontFamily-poppins);
     line-height: 1.2;
   }
@@ -212,6 +213,10 @@
   }
   .h2 { 
     font-size: var(--fontSize-1); 
+  }
+  .h25 {
+    color: var(--deep-purple-1);
+    font-size: var(--fontSize-3);
   }
   .h3 { 
     font-size: var(--fontSize-5); 
