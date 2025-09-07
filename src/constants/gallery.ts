@@ -394,13 +394,6 @@ export const MEDIA_ITEMS: MediaItem[] = [
         title: "Comprehensive Dental Treatment",
         type: "image"
     },
-    {
-        id: 57,
-        src: "/images/media/gallery/g45.webp",
-        alt: "Expert Dental Team in Action",
-        title: "Expert Dental Team in Action",
-        type: "image"
-    },
 ];
 
 // Legacy export for backward compatibility
