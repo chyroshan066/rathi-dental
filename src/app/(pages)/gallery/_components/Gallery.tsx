@@ -46,7 +46,7 @@ export default function Gallery({
   const visibleMediaItems = mediaItems.slice(0, loadedItems);
 
   const handleLoadMore = () => {
-    setLoadedItems(prev => Math.min(prev + 6, mediaItems.length));
+    setLoadedItems(prev => Math.min(prev + 12, mediaItems.length));
   };
 
   const openLightbox = (index: number) => {

@@ -3,9 +3,9 @@ import { MediaItem } from "@/types";
 export const MEDIA_ITEMS: MediaItem[] = [
     {
         id: 1,
-        src: "/images/media/gallery/g1.webp",
-        alt: "Modern Dental Treatment Room",
-        title: "Modern Dental Treatment Room",
+        src: "/images/media/gallery/g40.webp",
+        alt: "Gentle Pediatric Dental Care - Making Kids Comfortable",
+        title: "Gentle Pediatric Dental Care - Making Kids Comfortable",
         type: "image"
     },
     {
@@ -25,23 +25,23 @@ export const MEDIA_ITEMS: MediaItem[] = [
     },
     {
         id: 4,
-        src: "/images/media/gallery/g3.webp",
-        alt: "Advanced Sterilization and Instrument Processing Center",
-        title: "Advanced Sterilization and Instrument Processing Center",
+        src: "/images/media/gallery/g38.webp",
+        alt: "Gentle Pediatric Dental Care - Making Kids Comfortable",
+        title: "Gentle Pediatric Dental Care - Making Kids Comfortable",
         type: "image"
     },
     {
         id: 5,
-        src: "/images/media/gallery/g4.webp",
-        alt: "Clinic Location and Directions",
-        title: "Clinic Location and Directions",
+        src: "/images/media/gallery/g27.webp",
+        alt: "Gentle Pediatric Dental Care - Making Kids Comfortable",
+        title: "Gentle Pediatric Dental Care - Making Kids Comfortable",
         type: "image"
     },
     {
         id: 6,
-        src: "/images/media/gallery/g5.webp",
-        alt: "Dr. Mamta Soni's Professional Certifications",
-        title: "Dr. Mamta Soni's Professional Certifications",
+        src: "/images/media/gallery/g20.webp",
+        alt: "Pediatric Dental Care - Gentle Treatment for Young Patients",
+        title: "Pediatric Dental Care - Gentle Treatment for Young Patients",
         type: "image"
     },
     {
@@ -60,9 +60,9 @@ export const MEDIA_ITEMS: MediaItem[] = [
     },
     {
         id: 9,
-        src: "/images/media/gallery/g7.webp",
-        alt: "Comprehensive Dental Treatment",
-        title: "Comprehensive Dental Treatment",
+        src: "/images/media/gallery/g19.webp",
+        alt: "Gentle Pediatric Dental Care - Making Kids Comfortable",
+        title: "Gentle Pediatric Dental Care - Making Kids Comfortable",
         type: "image"
     },
     {
@@ -88,9 +88,9 @@ export const MEDIA_ITEMS: MediaItem[] = [
     },
     {
         id: 13,
-        src: "/images/media/gallery/g10.webp",
-        alt: "Advanced Dental Procedures with Precision Equipment",
-        title: "Advanced Dental Procedures with Precision Equipment",
+        src: "/images/media/gallery/g16.webp",
+        alt: "Happy Patient, Successful Treatment",
+        title: "Happy Patient, Successful Treatment",
         type: "image",
     },
     {
@@ -109,16 +109,16 @@ export const MEDIA_ITEMS: MediaItem[] = [
     },
     {
         id: 16,
-        src: "/images/media/gallery/g12.webp",
-        alt: "Advanced Dental Technology and Care",
-        title: "Advanced Dental Technology and Care",
+        src: "/images/media/gallery/g13.webp",
+        alt: "Community Dental Education Program",
+        title: "Community Dental Education Program",
         type: "image",
     },
     {
         id: 17,
-        src: "/images/media/gallery/g13.webp",
-        alt: "Community Dental Education Program",
-        title: "Community Dental Education Program",
+        src: "/images/media/gallery/g12.webp",
+        alt: "Advanced Dental Technology and Care",
+        title: "Advanced Dental Technology and Care",
         type: "image",
     },
     {
@@ -144,9 +144,9 @@ export const MEDIA_ITEMS: MediaItem[] = [
     },
     {
         id: 21,
-        src: "/images/media/gallery/g16.webp",
-        alt: "Happy Patient, Successful Treatment",
-        title: "Happy Patient, Successful Treatment",
+        src: "/images/media/gallery/g10.webp",
+        alt: "Advanced Dental Procedures with Precision Equipment",
+        title: "Advanced Dental Procedures with Precision Equipment",
         type: "image",
     },
     {
@@ -172,9 +172,9 @@ export const MEDIA_ITEMS: MediaItem[] = [
     },
     {
         id: 25,
-        src: "/images/media/gallery/g19.webp",
-        alt: "Gentle Pediatric Dental Care - Making Kids Comfortable",
-        title: "Gentle Pediatric Dental Care - Making Kids Comfortable",
+        src: "/images/media/gallery/g7.webp",
+        alt: "Comprehensive Dental Treatment",
+        title: "Comprehensive Dental Treatment",
         type: "image"
     },
     {
@@ -186,9 +186,9 @@ export const MEDIA_ITEMS: MediaItem[] = [
     },
     {
         id: 27,
-        src: "/images/media/gallery/g20.webp",
-        alt: "Pediatric Dental Care - Gentle Treatment for Young Patients",
-        title: "Pediatric Dental Care - Gentle Treatment for Young Patients",
+        src: "/images/media/gallery/g5.webp",
+        alt: "Dr. Mamta Soni's Professional Certifications",
+        title: "Dr. Mamta Soni's Professional Certifications",
         type: "image"
     },
     {
@@ -249,9 +249,9 @@ export const MEDIA_ITEMS: MediaItem[] = [
     },
     {
         id: 36,
-        src: "/images/media/gallery/g27.webp",
-        alt: "Gentle Pediatric Dental Care - Making Kids Comfortable",
-        title: "Gentle Pediatric Dental Care - Making Kids Comfortable",
+        src: "/images/media/gallery/g4.webp",
+        alt: "Clinic Location and Directions",
+        title: "Clinic Location and Directions",
         type: "image"
     },
     {
@@ -347,9 +347,9 @@ export const MEDIA_ITEMS: MediaItem[] = [
     },
     {
         id: 50,
-        src: "/images/media/gallery/g38.webp",
-        alt: "Gentle Pediatric Dental Care - Making Kids Comfortable",
-        title: "Gentle Pediatric Dental Care - Making Kids Comfortable",
+        src: "/images/media/gallery/g3.webp",
+        alt: "Advanced Sterilization and Instrument Processing Center",
+        title: "Advanced Sterilization and Instrument Processing Center",
         type: "image"
     },
     {
@@ -361,9 +361,9 @@ export const MEDIA_ITEMS: MediaItem[] = [
     },
     {
         id: 52,
-        src: "/images/media/gallery/g40.webp",
-        alt: "Gentle Pediatric Dental Care - Making Kids Comfortable",
-        title: "Gentle Pediatric Dental Care - Making Kids Comfortable",
+        src: "/images/media/gallery/g1.webp",
+        alt: "Modern Dental Treatment Room",
+        title: "Modern Dental Treatment Room",
         type: "image"
     },
     {
