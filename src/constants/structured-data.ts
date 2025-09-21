@@ -1,4 +1,101 @@
-export const dentalClinicStructuredData = {
+interface PostalAddress {
+  "@type": "PostalAddress";
+  streetAddress: string;
+  addressLocality: string;
+  addressRegion: string;
+  postalCode: string;
+  addressCountry: string;
+}
+
+interface AggregateRating {
+  "@type": "AggregateRating";
+  ratingValue: string;
+  ratingCount: string;
+}
+
+interface GeoCoordinates {
+  "@type": "GeoCoordinates";
+  latitude: string;
+  longitude: string;
+}
+
+interface EntryPoint {
+  "@type": "EntryPoint";
+  urlTemplate: string;
+}
+
+interface Appointment {
+  "@type": "Appointment";
+  name: string;
+}
+
+interface ScheduleAction {
+  "@type": "ScheduleAction";
+  target: EntryPoint;
+  result: Appointment;
+}
+
+interface AnatomicalStructure {
+  "@type": "AnatomicalStructure";
+  name: string;
+}
+
+interface MedicalProcedure {
+  "@type": "MedicalProcedure";
+  name: string;
+  description: string;
+  procedureType: string;
+  bodyLocation: AnatomicalStructure;
+}
+
+interface MedicalSpecialty {
+  "@type": "MedicalSpecialty";
+  name: string;
+  description: string;
+  includedServices: string[];
+}
+
+interface ListItem {
+  "@type": "ListItem";
+  position: number;
+  item: MedicalSpecialty;
+}
+
+interface DentalBusinessStructuredData {
+  "@context": "https://schema.org";
+  "@type": "Dentist";
+  name: string;
+  description: string;
+  url: string | undefined;
+  address: PostalAddress;
+  telephone: string;
+  email: string;
+  openingHours: string[];
+  medicalSpecialty: string[];
+  priceRange: string;
+  aggregateRating: AggregateRating;
+  geo: GeoCoordinates;
+  sameAs: string[];
+  potentialAction: ScheduleAction;
+}
+
+interface DentalServicesStructuredData {
+  "@context": "https://schema.org";
+  "@type": "MedicalBusiness";
+  name: string;
+  description: string;
+  availableService: MedicalProcedure[];
+}
+
+interface SpecialtiesStructuredData {
+  "@context": "https://schema.org";
+  "@type": "ItemList";
+  name: string;
+  description: string;
+  itemListElement: ListItem[];
+}
+
+export const dentalClinicStructuredData: DentalBusinessStructuredData = {
   "@context": "https://schema.org",
   "@type": "Dentist",
   "name": "Rathi Dental", 
@@ -54,7 +151,7 @@ export const dentalClinicStructuredData = {
   }
 };
 
-export const dentalServicesStructuredData = {
+export const dentalServicesStructuredData: DentalServicesStructuredData = {
   "@context": "https://schema.org",
   "@type": "MedicalBusiness",
   "name": "Dental Services",
@@ -264,7 +361,7 @@ export const dentalServicesStructuredData = {
   ]
 };
 
-export const dentalSpecialtiesStructuredData = {
+export const dentalSpecialtiesStructuredData: SpecialtiesStructuredData = {
   "@context": "https://schema.org",
   "@type": "ItemList",
   "name": "Dental Specialties and Services",
