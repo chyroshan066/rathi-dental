@@ -74,8 +74,8 @@ export const Maps: React.FC = () => {
     const clinicLocation: ClinicLocation = {
         lat: 26.66187,
         lng: 87.27682,
-        name: "Basuki Dental Clinic",
-        address: "Biratnagar, Morang, Nepal"
+        name: "Rathi Dental Clinic",
+        address: "Itahari, Sunsari, Nepal"
     };
 
     useEffect(() => {
@@ -110,7 +110,7 @@ export const Maps: React.FC = () => {
             // Initialize map
             const map = window.L.map(mapRef.current, {
                 center: [clinicLocation.lat, clinicLocation.lng],
-                zoom: 15,
+                zoom: 40,
                 zoomControl: true,
                 scrollWheelZoom: true,
                 touchZoom: true,

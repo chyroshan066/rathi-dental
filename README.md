@@ -121,6 +121,7 @@ rathi-dental/
 ├── package.json
 ├── postcss.config.mjs
 ├── tsconfig.json
+├── vercel.json
 └── README.md
 ```
 
