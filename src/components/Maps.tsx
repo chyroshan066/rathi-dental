@@ -110,7 +110,7 @@ export const Maps: React.FC = () => {
             // Initialize map
             const map = window.L.map(mapRef.current, {
                 center: [clinicLocation.lat, clinicLocation.lng],
-                zoom: 40,
+                zoom: 17,
                 zoomControl: true,
                 scrollWheelZoom: true,
                 touchZoom: true,
@@ -158,6 +158,28 @@ export const Maps: React.FC = () => {
             // Add marker with popup
             const marker: LeafletMarker = window.L.marker([clinicLocation.lat, clinicLocation.lng], {
                 icon: customIcon
+            }).addTo(map);
+
+            // Create a permanent label next to the marker
+            const labelIcon = window.L.divIcon({
+                className: 'clinic-label',
+                html: `
+                    <div style="
+        font-family: 'Roboto', Arial, sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--royal-purple);
+        white-space: nowrap;
+        text-shadow: 1px 1px 2px white, -1px -1px 2px white, 1px -1px 2px white, -1px 1px 2px white;
+    ">${clinicLocation.name}</div>
+                `,
+                iconSize: [0, 0],
+                iconAnchor: [60, 60]
+            });
+
+            // Add the label as a separate marker
+            window.L.marker([clinicLocation.lat, clinicLocation.lng], {
+                icon: labelIcon
             }).addTo(map);
 
             // Create popup content
@@ -309,6 +331,11 @@ export const Maps: React.FC = () => {
         .leaflet-popup-tip {
           background-color: white !important;
           box-shadow: var(--shadow-2) !important;
+        }
+        
+        /* Style for the clinic label */
+        .clinic-label {
+          pointer-events: none;
         }
         
         /* Responsive adjustments */
