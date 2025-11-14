@@ -1,12 +1,13 @@
 import { memo } from "react";
 import { IonIcon } from "./utility/IonIcon";
 import { NAVLINKS, SERVICES, SOCIALLINKS } from "@/constants";
-import { Link, Services } from "@/types";
+import { NavLink, Services } from "@/types";
 import { SocialLink } from "./utility/SocialLink";
+import Link from "next/link";
 
 interface FooterColumn {
     footerListTitle: string;
-    list: Link[] | Services[];
+    list: NavLink[] | Services[];
 }
 
 const FOOTERCOLUMN: FooterColumn[] = [
@@ -30,13 +31,13 @@ const FooterColumn = memo(({
 
         {list.map((link, index) => (
             <li key={index}>
-                <a
-                    href={link.href?.includes("#") ? link.href : `#${link.href}`}
+                <Link
+                    href={link.href}
                     className="footer-link"
                 >
                     <IonIcon name="add-outline" />
                     <span className="span">{link.name}</span>
-                </a>
+                </Link>
             </li>
         ))}
 
@@ -50,12 +51,12 @@ export const Footer = memo(() => (
         <div className="footer-top section">
             <div className="custom-container">
                 <div className="footer-brand">
-                    <a
-                        href="#"
+                    <Link
+                        href="/"
                         className="logo"
                     >
                         Rathi Dental
-                    </a>
+                    </Link>
                     <p className="footer-text">
                         Your trusted <strong>dental clinic in Itahari</strong> for <strong>dental implants</strong>, <strong>braces</strong>, <strong>cosmetic dentistry</strong>, <strong>root canal</strong>, <strong>teeth whitening</strong>, <strong>orthodontics</strong>, and <strong>family dental care</strong> at an affordable price. Visit <strong>Rathi Dental Nepal</strong> for healthy smiles.
                     </p>

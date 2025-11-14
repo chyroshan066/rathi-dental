@@ -1,6 +1,6 @@
-import { Link } from "@/types";
+import { NavLink } from "@/types";
 
-export const NAVLINKS: Link[] = [
+export const NAVLINKS: NavLink[] = [
     {
         href: "/#home",
         name: "Home",

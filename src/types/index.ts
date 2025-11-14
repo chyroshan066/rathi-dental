@@ -17,7 +17,7 @@ export interface Doctors {
     ionIcon: IonIcon[];
 }
 
-export interface Link {
+export interface NavLink {
     name: string;
     href: string;
 }

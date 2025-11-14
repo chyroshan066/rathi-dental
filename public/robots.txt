@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Block Next.js static assets from indexing
+Disallow: /_next/static/
+Disallow: /_next/image/
+
+# Block font files
+Disallow: /*.woff2$
+Disallow: /*.woff$
+Disallow: /*.ttf$
+Disallow: /*.eot$
+
+Sitemap: https://sewarotattoo.com/sitemap.xml

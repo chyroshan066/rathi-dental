@@ -1,6 +1,6 @@
-import { Link } from "@/types";
+import { NavLink } from "@/types";
 
-export const SOCIALLINKS: Link[] = [
+export const SOCIALLINKS: NavLink[] = [
     {
         href: "https://www.facebook.com/rathidentalclinicitahari",
         name: "logo-facebook",
