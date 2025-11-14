@@ -1,10 +1,10 @@
-import { Link } from "@/types";
+import { NavLink } from "@/types";
 import { IonIcon } from "./IonIcon";
 import { memo } from "react";
 
 export const SocialLink = memo(({
     href, name
-}: Link) => (
+}: NavLink) => (
     <li>
         <a
             href={href}
